@@ -8,6 +8,9 @@ django = "*"
 django-debug-toolbar = "*"
 django-jazzmin = "*"
 django-adminlte-3 = "*"
+dj-database-url = "*"
+gunicorn = "*"
+dj-static = "*"
 
 [dev-packages]
 
