@@ -1,1 +1,1 @@
-web: gunicorn --pythonpath answer answer.wsgi
+web: gunicorn answer.wsgi

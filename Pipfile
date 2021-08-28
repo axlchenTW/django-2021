@@ -10,7 +10,7 @@ django-jazzmin = "*"
 django-adminlte-3 = "*"
 dj-database-url = "*"
 gunicorn = "*"
-dj-static = "*"
+django-heroku = "*"
 
 [dev-packages]
 
