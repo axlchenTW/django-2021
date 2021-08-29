@@ -21,7 +21,7 @@ def index(request):
 # course detail
 def course(request, course_id):
     course = Course.objects.get(pk=course_id)
-    course_members = CourseMember.objects.all().filter(course_id__exact=course_id)#.order_by('student.name')
+    course_members = CourseMember.objects.all().filter(course_id__exact=course_id)
 
     context = {
         'course': course,
