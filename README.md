@@ -4,4 +4,4 @@
 
 - create basic project by django
 - publish to github
-- publish to heroku
+- publish to heroku, url-> https://answerdemo.herokuapp.com/

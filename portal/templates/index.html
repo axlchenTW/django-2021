@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Answer</title>
+</head>
+<body>
+
+    <h1>學生清單 :</h1>
+    <ul>
+    {% for student in students %}
+        <li>{{ student.name }}</li>
+    {% endfor %}
+    </ul>
+    <p>
+
+    <h1>課程清單 :</h1>
+    <ul>
+    {% for course in courses %}
+        <li>{{ course.name }} (<a href="{% url 'course' course.id %}">明細</a>)</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
+
