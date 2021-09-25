@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-#    'jazzmin',
+    'jazzmin',
 #    'adminlte3',
 #    'adminlte3_theme',
     'django.contrib.admin',
