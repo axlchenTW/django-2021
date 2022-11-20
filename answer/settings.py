@@ -27,9 +27,12 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+# jazzmin UI Customizer
+JAZZMIN_UI_TWEAKS = {
+    "theme": "flatly",
+}
 
 # Application definition
-
 INSTALLED_APPS = [
     'jazzmin',
 #    'adminlte3',

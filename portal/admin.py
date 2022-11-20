@@ -32,7 +32,7 @@ class StudentAdmin(admin.ModelAdmin):
 
 @admin.register(Course)
 class CourseAdmin(admin.ModelAdmin):
-    list_display = ('name', 'teacher', 'tuition', 'meterial_fee')
+    list_display = ('name', 'course_type', 'teacher', 'tuition', 'meterial_fee')
     ordering = ('name',)
     list_filter = ('course_type',)
 

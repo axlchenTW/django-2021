@@ -1,0 +1,20 @@
+databases:
+  - name: axl_demo
+    databaseName: axl_demo
+    user: axl_demo_user
+
+services:
+  - type: web
+    name: mysite
+    env: python
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn mysite.wsgi:application"
+    envVars:
+      - key: postgres://axl_demo_user:9yXA36mqb1Qy0O3IOW9iSm9Ou1LUhNJj@dpg-cdt1a1g2i3mrfog4sijg-a/axl_demo
+        fromDatabase:
+          name: mysite
+          property: connectionString
+      - key: SECRET_KEY
+        generateValue: true
+      - key: WEB_CONCURRENCY
+        value: 4
