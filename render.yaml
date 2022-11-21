@@ -5,14 +5,14 @@ databases:
 
 services:
   - type: web
-    name: mysite
+    name: answer
     env: python
     buildCommand: "./build.sh"
-    startCommand: "gunicorn mysite.wsgi:application"
+    startCommand: "gunicorn answer.wsgi:application"
     envVars:
       - key: postgres://axl_demo_user:9yXA36mqb1Qy0O3IOW9iSm9Ou1LUhNJj@dpg-cdt1a1g2i3mrfog4sijg-a/axl_demo
         fromDatabase:
-          name: mysite
+          name: axl_demo
           property: connectionString
       - key: SECRET_KEY
         generateValue: true
