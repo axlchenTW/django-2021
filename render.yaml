@@ -5,6 +5,7 @@ databases:
 
 services:
   - type: web
+    plans: free
     name: answer
     env: python
     buildCommand: "./build.sh"
@@ -18,5 +19,3 @@ services:
         generateValue: true
       - key: WEB_CONCURRENCY
         value: 4
-
-plans : free
