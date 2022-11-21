@@ -12,7 +12,7 @@ services:
     buildCommand: "./build.sh"
     startCommand: "gunicorn answer.wsgi:application"
     envVars:
-      - key: postgres://axl_demo_user:9yXA36mqb1Qy0O3IOW9iSm9Ou1LUhNJj@dpg-cdt1a1g2i3mrfog4sijg-a/axl_demo
+      - key: DATABASE_URL
         fromDatabase:
           name: axl_demo
           property: connectionString
