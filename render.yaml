@@ -1,5 +1,6 @@
 databases:
   - name: axl_demo
+    plan: free
     databaseName: axl_demo
     user: axl_demo_user
 
